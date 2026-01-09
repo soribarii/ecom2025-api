@@ -4,7 +4,7 @@ import { changeOrderStatus, getOrderAdmin } from '../controllers/adminController
 
 const router = express.Router();
 
-// @ENDPOINT http://localhost:5000/api
+// @ENDPOINT https://ecom2025-api-orcin.vercel.app/api
 router.put('/admin/order-status', authCheck, changeOrderStatus);
 router.get('/admin/orders', authCheck, getOrderAdmin);
 

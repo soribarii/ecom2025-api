@@ -4,7 +4,7 @@ import { payment } from '../controllers/stripeController.js';
 
 const router = express.Router();
 
-// @ENDPOINT http://localhost:5000/api
+// @ENDPOINT https://ecom2025-api-orcin.vercel.app/api
 router.post('/user/create-payment-intent', authCheck, payment);
 
 export default router;

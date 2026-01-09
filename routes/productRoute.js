@@ -4,7 +4,7 @@ import { adminCheck, authCheck } from '../middleware/authCheck.js';
 
 const router = express.Router();
 
-// @ENDPOINT http://localhost:5000/api
+// @ENDPOINT https://ecom2025-api-orcin.vercel.app/api
 router.post('/product', create);
 router.get('/products/:count', list);
 router.get('/product/:id', read);

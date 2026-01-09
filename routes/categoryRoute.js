@@ -5,7 +5,7 @@ import { authCheck, adminCheck } from '../middleware/authCheck.js'
 
 const router = express.Router();
 
-// @ENDPOINT http://localhost:5000/api
+// @ENDPOINT https://ecom2025-api-orcin.vercel.app/api
 router.post('/category', validate(categorySchema), authCheck, adminCheck, create)
 router.get('/category', list)
 router.put('/category', update);
