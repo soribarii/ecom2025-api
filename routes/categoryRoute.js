@@ -1,5 +1,5 @@
 import express from 'express';
-import { categorySchema, validate } from '../utils/Validate.js';
+import { categorySchema, validate } from '../utils/validate.js';
 import { create, list, remove, update } from '../controllers/categoryController.js';
 import { authCheck, adminCheck } from '../middleware/authCheck.js'
 
